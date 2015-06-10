@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "server": "static",
     "test": "mocha --harmony"
   },
   "author": "Mikhail Kuzmin",
@@ -12,7 +13,8 @@
     "chai": "^3.0.0",
     "jsdom": "^5.4.3",
     "jspm": "~0.16.0-beta",
-    "mocha": "~2.2.5"
+    "mocha": "~2.2.5",
+    "node-static": "^0.7.6"
   },
   "jspm": {
     "directories": {},
