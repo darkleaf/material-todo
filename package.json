@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Mikhail Kuzmin",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "jspm": "~0.16.0-beta"
+    "jspm": "~0.16.0-beta",
+    "mocha": "~2.2.5"
   },
   "jspm": {
     "directories": {},
+    "dependencies": {
+      "react": "npm:react@^0.13.3"
+    },
     "devDependencies": {
       "babel": "npm:babel-core@^5.4.3",
       "babel-runtime": "npm:babel-runtime@^5.4.3",
