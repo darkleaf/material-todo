@@ -1,35 +1,32 @@
-import assert from 'assert';
+import chai from 'chai';
+const {expect} = chai;
+import React from 'react/addons';
 
 import Component from 'src/component';
 
-import React from 'react/addons';
+
 
 const utils = React.addons.TestUtils;
 
 
 describe('Array', () => {
-    describe('#indexOf()', () => {
-        it('should return -1 when the value is not present', () => {
-            //console.log(document.body);
+  describe('#indexOf()', () => {
+    it('should return -1 when the value is not present', () => {
 
-            let comp = utils.renderIntoDocument(<Component />);
-
+      //let a = utils.renderIntoDocument(<Component />);
 
 
-            //console.log(comp.getDOMNode())
+      //utils.Simulate.click(a.refs.a.refs.button)
 
-            //let node = comp.getDOMNode()//.getElementById('html');
+      //React.render(<Component />, document.body);
 
-            var input = utils.findRenderedDOMComponentWithTag(comp, 'div');
-
-
-            
+      //console.log(document.getElementById('button').click())
 
 
-            utils.Simulate.click(input);
+      console.log((new Component({}).handleClick()));
 
-            assert.equal(-1, [1,2,3].indexOf(5));
-            assert.equal(-1, [1,2,3].indexOf(0));
-        });
+
+      //expect('foo').to.be.a('string');
     });
+  });
 });

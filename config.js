@@ -8,23 +8,19 @@ System.config({
     "blacklist": []
   },
   "paths": {
+    "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js",
-    "*": "*.js"
-  },
-  "defaultJSExtensions": true
+    "npm:*": "jspm_packages/npm/*.js"
+  }
 });
 
 System.config({
   "map": {
-    "assert": "github:jspm/nodelibs-assert@0.1.0",
     "babel": "npm:babel-core@5.5.6",
     "babel-runtime": "npm:babel-runtime@5.5.6",
-    "core-js": "npm:core-js@0.9.15",
+    "chai": "npm:chai@3.0.0",
+    "core-js": "npm:core-js@0.9.16",
     "react": "npm:react@0.13.3",
-    "github:jspm/nodelibs-assert@0.1.0": {
-      "assert": "npm:assert@1.3.0"
-    },
     "github:jspm/nodelibs-buffer@0.1.0": {
       "buffer": "npm:buffer@3.2.2"
     },
@@ -49,9 +45,6 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:assert@1.3.0": {
-      "util": "npm:util@0.10.3"
-    },
     "npm:babel-runtime@5.5.6": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
@@ -60,7 +53,15 @@ System.config({
       "ieee754": "npm:ieee754@1.1.5",
       "is-array": "npm:is-array@1.0.1"
     },
-    "npm:core-js@0.9.15": {
+    "npm:chai@3.0.0": {
+      "assertion-error": "npm:assertion-error@1.0.1",
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "deep-eql": "npm:deep-eql@0.1.3",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0",
+      "type-detect": "npm:type-detect@1.0.0"
+    },
+    "npm:core-js@0.9.16": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
@@ -68,10 +69,14 @@ System.config({
     "npm:core-util-is@1.0.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
+    "npm:deep-eql@0.1.3": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "type-detect": "npm:type-detect@0.1.1"
+    },
     "npm:envify@3.4.0": {
       "jstransform": "npm:jstransform@10.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1",
-      "through": "npm:through@2.3.4"
+      "through": "npm:through@2.3.7"
     },
     "npm:esprima-fb@13001.1001.0-dev-harmony-fb": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -92,6 +97,11 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:react@0.13.3": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "envify": "npm:envify@3.4.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:react@0.14.0-alpha3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "envify": "npm:envify@3.4.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
@@ -122,7 +132,7 @@ System.config({
     "npm:string_decoder@0.10.31": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
-    "npm:through@2.3.4": {
+    "npm:through@2.3.7": {
       "process": "github:jspm/nodelibs-process@0.1.1",
       "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
